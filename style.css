@@ -1,0 +1,111 @@
+body{
+    background: #2a2e31;
+}
+/* Icon 1 */
+.navbar{
+    background-color: RGB(29,31,32);
+}
+.imgLogo{
+    width: 120px;
+    height: 50px;
+}
+
+
+.devs h1{
+   text-align: center;
+
+    
+}
+
+
+.container{
+    /* background: RGB(29,31,32); */
+}
+
+.container h1 {
+    text-align: center;
+    margin: 30px auto 15px auto;
+    color: white;
+
+}
+.container p{
+    text-align: center;
+    color:white;
+    border: 2px solid  #696969;
+}
+
+
+/* Carousel */
+.carousel{
+    max-width: 500px;
+    max-height: 1000px;
+    margin: 15px auto ;
+}
+.carousel>.d-block.w-100{
+    max-width: 500px;
+    height: 500px;
+}
+
+
+
+/* footer */
+
+#footer{
+
+    max-width: 320px;
+    font-size: 14px;
+    text-align: center;
+    /* margin-bottom: 0; */
+    bottom: 0px;
+    width: 100%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(29,31,32) ;
+    color: white;
+    text-align: center;
+
+
+    
+}
+
+#footer a:link{
+
+    color: white;
+}
+
+.footer-copyright{
+
+    background-color: rgb(29,31,32) ;
+}
+
+.txtFooter{
+margin-top:30px;
+}
+
+
+@media (min-width: 768px) {
+    
+    #footer{
+
+
+
+
+
+
+/* media query */
+
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1024px) {
+    #hamburguer{
+        display:none;
+    }
+    }
