@@ -9,26 +9,68 @@ body{
     background-size: cover;
     font-family: 'Marvel', sans-serif;
 }
-/* Icon 1 */
-.navbar{
-    background-color: #030C1C;
-    font-family: 'Press Start 2P', cursive;
+
+.container{
+    max-width: 80%;
 }
-.imgLogo{
+
+header{
+    border-bottom: 1px solid #414141;
+}
+
+.logo{
     width: 120px;
     height: 50px;
 }
 
+.navbar{
+    background-color: #030C1C;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+#iPesquisa{
+    font-size: 15px;
+}
+
+.lupa{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.buscar:hover{
+    background-color: #5C5099;
+
+}
+
+.buscar{
+    background-color: #e9316e;
+}
+
+.cadastrar{
+    background-color: #e9316e;
+    padding: 10px !important;
+    border-radius: 5px !important;
+}
+
+#btnCadastro:hover{
+    background-color: #5C5099 !important;
+    color: #fff !important;
+}
+
+ul li a:hover{
+    color: #e9316e !important;
+}
+
+ul > li > a{
+    color: #fff !important;
+    padding-right: 30px !important;
+}
 
 .devs h1{
    text-align: center;
 
-    
-}
-
-
-.container{
-    /* background: #030C1C; */
 }
 
 .container h1 {
