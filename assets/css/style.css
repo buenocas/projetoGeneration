@@ -26,16 +26,17 @@ header{
 .navbar{
     background-color: #030C1C;
     font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #iPesquisa{
-    font-size: 15px;
+    font-size: 13px;
+    max-width: 180px;
 }
 
 .lupa{
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     
 }
 
@@ -50,7 +51,7 @@ header{
 
 .cadastrar{
     background-color: #e9316e;
-    padding: 10px !important;
+    padding: 7px !important;
     border-radius: 5px !important;
 }
 
@@ -65,7 +66,7 @@ ul li a:hover{
 
 ul > li > a{
     color: #fff !important;
-    padding-right: 30px !important;
+    padding-right: 10px !important;
 }
 
 .devs h1{
@@ -136,6 +137,29 @@ padding:30px 0 30px 0;
 }
 
 
+
+@media (max-width: 1024px) {
+    #iPesquisa{
+        width: 130px;
+        font-size: 11px;
+    }
+    #btnLupa{
+        max-width: 20%;
+    }
+    .cadastrar{
+       font-size: 13px;
+    }
+    ul > li > a{
+       font-size: 13px;
+       padding-right: 5px !important;
+        
+    }
+    
+    
+}
+
+
+
 @media (min-width: 768px) {
     
     #footer{
@@ -164,19 +188,14 @@ padding:30px 0 30px 0;
 
 
 /* media query */
-
-/* Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... } */
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1024px) {
-    #hamburguer{
-        display:none;
+@media (max-width: 425px) {
+    
+    #iPesquisa{
+        width: 70%;
     }
+    #btnLupa{
+        max-width: 20%;
     }
+  
+
+}
