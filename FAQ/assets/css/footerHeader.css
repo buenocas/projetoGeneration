@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
+
+/* Header */
+
+.container{
+    max-width: 90%;
+}
+
+header{
+    border-bottom: 1px solid #414141;
+}
+
+.logo{
+    width: 120px;
+    height: 50px;
+}
+
+.navbar{
+    background-color: #030C1C;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+}
+
+#iPesquisa{
+    font-size: 13px;
+    width: auto;
+    max-width: 250px;
+    margin: 0 20px 0 0;
+}
+
+.lupa{
+    width: 22px;
+    height: 22px;
+    
+}
+
+.buscar:hover{
+    background-color: #5C5099;
+
+}
+
+.buscar{
+    background-color: #e9316e;
+}
+
+.cadastrar{
+    background-color: #e9316e;
+    padding: 7px !important;
+    border-radius: 5px !important;
+    margin:0 0 0 10px;
+}
+
+#btnCadastro:hover{
+    background-color: #5C5099 !important;
+    color: #fff !important;
+}
+
+ul li a:hover{
+    color: #e9316e !important;
+}
+
+ul > li > a{
+    color: #fff !important;
+    padding-right: 10px !important;
+}
+
+.devs h1{
+   text-align: center;
+
+}
+
+.container h1 {
+    text-align: center;
+    margin: 30px auto 15px auto;
+    color: white;
+
+}
+.container p{
+    text-align: center;
+    color:white;
+    border: 2px solid  #696969;
+}
+
+/* footer */
+
+#footer{
+    max-width: 320px;
+    font-size: 11px;
+    margin-top: 50px;
+    bottom: 0px;
+    width: 100%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000205 ;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+
+
+    
+}
+
+#h5Footer{
+
+    font-size: 13px;
+}
+
+#footer a:link{
+
+    color: white;
+}
+
+.footer-copyright{
+
+    background-color: #000205 ;
+    font-size: 9px;
+}
+
+.txtFooter{
+padding:30px 0 30px 0;
+
+}
+
+
+
+
+/* media query */
+
+@media (max-width: 1024px) {
+    #iPesquisa{
+        width: 200px;
+        font-size: 11px;
+    }
+    #btnLupa{
+        max-width: 20%;
+    }
+    .cadastrar{
+       font-size: 13px;
+    }
+    ul > li > a{
+       font-size: 13px;
+       padding-right: 5px !important;
+        
+    }
+
+    #hamburguer{
+        display:none;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    
+    #footer{
+
+        font-size: 0.7em;
+    
+    }
+
+    #h5Footer{
+
+        margin-bottom: 20px;
+    }
+
+    .txtFooter{
+        
+        display: inline;
+
+    }
+
+    .footer-copyright{
+
+        background-color: #000205 ;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    
+    #iPesquisa{
+        width: 75%;
+        margin: 0 5px 0 0;
+    }
+    #btnLupa{
+        max-width: 5%;
+    }
+  
+    #menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo{
+        order: 1;
+    }
+
+    #hamburguer{
+        order: 2;
+    }
+
+    #pesquisa{
+        order: 3;
+        width:100vw;
+
+    }
+    
+    .cadastrar{
+
+        max-width: 350px;
+        margin: 0;
+        flex: auto;
+        justify-content: center;
+    }
+
+
+}

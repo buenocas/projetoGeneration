@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
+
+
+body{
+    background-image: url('../img/bodyBackGround.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Marvel', sans-serif;
+}
+
+/* Carousel */
+.carousel{
+    max-width: 500px;
+    max-height: 1000px;
+    margin: 15px auto ;
+}
+.carousel>.d-block.w-100{
+    max-width: 500px;
+    height: 500px;
+}

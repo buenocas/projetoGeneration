@@ -2,16 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
 
-
-body{
-    background-image: url('../img/bodyBackGround.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Marvel', sans-serif;
-}
+/* Header */
 
 .container{
-    max-width: 80%;
+    max-width: 90%;
 }
 
 header{
@@ -26,16 +20,19 @@ header{
 .navbar{
     background-color: #030C1C;
     font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #iPesquisa{
-    font-size: 15px;
+    font-size: 13px;
+    width: auto;
+    max-width: 250px;
+    margin: 0 20px 0 0;
 }
 
 .lupa{
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     
 }
 
@@ -50,8 +47,9 @@ header{
 
 .cadastrar{
     background-color: #e9316e;
-    padding: 10px !important;
+    padding: 7px !important;
     border-radius: 5px !important;
+    margin:0 0 0 10px;
 }
 
 #btnCadastro:hover{
@@ -65,7 +63,7 @@ ul li a:hover{
 
 ul > li > a{
     color: #fff !important;
-    padding-right: 30px !important;
+    padding-right: 10px !important;
 }
 
 .devs h1{
@@ -85,28 +83,12 @@ ul > li > a{
     border: 2px solid  #696969;
 }
 
-
-/* Carousel */
-.carousel{
-    max-width: 500px;
-    max-height: 1000px;
-    margin: 15px auto ;
-}
-.carousel>.d-block.w-100{
-    max-width: 500px;
-    height: 500px;
-}
-
-
-
 /* footer */
 
 #footer{
-
     max-width: 320px;
-    font-size: 14px;
-    text-align: center;
-    /* margin-bottom: 0; */
+    font-size: 11px;
+    margin-top: 50px;
     bottom: 0px;
     width: 100%;
     text-decoration: none;
@@ -120,6 +102,11 @@ ul > li > a{
     
 }
 
+#h5Footer{
+
+    font-size: 13px;
+}
+
 #footer a:link{
 
     color: white;
@@ -128,6 +115,7 @@ ul > li > a{
 .footer-copyright{
 
     background-color: #000205 ;
+    font-size: 9px;
 }
 
 .txtFooter{
@@ -136,7 +124,34 @@ padding:30px 0 30px 0;
 }
 
 
-@media (min-width: 768px) {
+
+
+/* media query */
+
+@media (max-width: 1024px) {
+    #iPesquisa{
+        width: 200px;
+        font-size: 11px;
+    }
+    #btnLupa{
+        max-width: 20%;
+    }
+    .cadastrar{
+       font-size: 13px;
+    }
+    ul > li > a{
+       font-size: 13px;
+       padding-right: 5px !important;
+        
+    }
+    
+    
+}
+
+
+
+
+@media (max-width: 768px) {
     
     #footer{
 
@@ -146,7 +161,7 @@ padding:30px 0 30px 0;
 
     #h5Footer{
 
-        display: none;
+        margin-bottom: 20px;
     }
 
     .txtFooter{
@@ -163,20 +178,42 @@ padding:30px 0 30px 0;
 }
 
 
-/* media query */
+@media (max-width: 425px) {
+    
+    #iPesquisa{
+        width: 75%;
+        margin: 0 5px 0 0;
+    }
+    #btnLupa{
+        max-width: 5%;
+    }
+  
+    #menu{
+        display: flex;
+        flex-direction: row;
+    }
 
-/* Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+    .logo{
+        order: 1;
+    }
 
-Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... } */
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1024px) {
     #hamburguer{
-        display:none;
+        order: 2;
     }
+
+    #pesquisa{
+        order: 3;
+        width:100vw;
+
     }
+    
+    .cadastrar{
+
+        max-width: 350px;
+        margin: 0;
+        flex: auto;
+        justify-content: center;
+    }
+
+
+}

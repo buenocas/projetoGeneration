@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footerHeader.css">
     <title>Troca Geek</title>
 </head>
 
@@ -15,23 +16,30 @@
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark static-top">
-            <div class="container">
+            <div class="container" id="menu">
                 <a class="navbar-brand" href="index.html">
                     <img class="logo" src="assets/img/logo.png" alt="Logo">
                 </a>
-                <!-- Search -->
+                <!-- Pequisa -->
                 <div id="pesquisa" class="navbar navbar-light bg-black">
                     <form class="form-inline">
-                        <input id="iPesquisa" class="form-control mr-sm-2 " type="search" placeholder="Pesquisar"
+                        <input id="iPesquisa" class="form-control mr-sm-2 " type="search" placeholder="Buscar"
                             aria-label="Pesquisar">
                         <button type="button" class="btn buscar" type="submit" id="btnPesquisa"><img
                                 src="assets/img/lupa.png" class="lupa" alt="Botão Buscar">
                         </button>
                     </form>
                 </div>
+                <!-- Fim pesquisa -->
+                <!-- Menu Hamburguer!NAO MEXAM -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Fim Hamburguer -->
                 <div id="navbarResponsive" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
@@ -41,7 +49,7 @@
                             <a class="nav-link" href="#">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a id="btnCadastro" class="nav-link cadastrar btn" type="button" href="#">Cadastre-se</a>
+                            <a id="btnCadastro" class="nav-link cadastrar btn" type="button" href="#">Cadastrar</a>
                         </li>
                     </ul>
                 </div>
@@ -50,6 +58,11 @@
     </header>
 
     <!-- Container -->
+    <!-- Fim menu -->
+
+
+
+
     <main>
         <div class="container">
             <section class="sobreNos">
@@ -131,17 +144,20 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-3 mb-md-0 mb-3 ">
+                <div class="col-md mb-md-0 mb-3 ">
                     <h5 id="h5Footer" class="text-uppercase">Utilidades</h5>
                     <ul class="list-unstyled txtFooter">
                         <li>
-                            <p>Sobre nós</a>
+                            <p>Dúvidas Frequentes</a>
                         </li>
                         <li>
-                            <p>Como Vender</a>
+                            <p>Sobre Nós</a>
                         </li>
                         <li>
                             <p>Contato</a>
+                        </li>
+                        <li>
+                            <p>Termos de Uso</a>
                         </li>
                     </ul>
 
@@ -164,7 +180,6 @@
 
 
 
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -174,7 +189,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="./sobreNos.js"></script>
+    <script src="./assets/js/validaContato.js"></script>
 
 </body>
 
